@@ -1,1 +1,14 @@
-<h1>Welcome to my job board app</h1>
+
+<% @jobs.each do |job| %>
+<div>
+  <h1><%= job.position %></h1><br />
+  <i><%= job.address %></i><br />
+  <i><%= job.company %></i><br />
+  <i><%= job.city %></i><br />
+  <i><%= job.state %></i><br />
+  <i><%= job.zipcode %></i><br />
+  <i><%= job.salary %></i><br />
+</div>
+
+<hr />
+<% end %>
