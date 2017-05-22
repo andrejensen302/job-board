@@ -1,4 +1,4 @@
-<div class="booyah-box">
+<div class="booyah-box clear">
 <h1>Enter a new job posting</h1>
 <%= simple_form_for @job do |f| %>
 <%= f.input :position %>
@@ -8,6 +8,7 @@
 <%= f.input :state %>
 <%= f.input :zipcode %>
 <%= f.input :salary %>
+<%= f.input :description %>
 <br />
 <%= f.submit 'Post', class: 'btn btn-success' %>
 <% end %>

@@ -15,8 +15,8 @@ class JobsController < ApplicationController
   private
 
   def job_params #pulls the values out of the form
-    params.require(:job).permit(:position, :company, :city, :state, :zipcode, :salary, :address)
+    params.require(:job).permit(:position, :company, :city, :state, :zipcode, :salary, :address) #all fields in the database
   end
 
-  
+
 end

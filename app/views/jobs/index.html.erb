@@ -1,6 +1,6 @@
 
 <% @jobs.each do |job| %>
-<div class="booyah-box">
+<div class="booyah-box clear">
   <h1><%= job.position %></h1><br />
   <i><%= job.address %></i><br />
   <i><%= job.company %></i><br />
@@ -8,6 +8,7 @@
   <i><%= job.state %></i><br />
   <i><%= job.zipcode %></i><br />
   <i><%= job.salary %></i><br />
+  <i><%= job.description %></i><br />
 </div>
 
 <hr />
